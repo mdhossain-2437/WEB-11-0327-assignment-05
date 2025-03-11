@@ -33,7 +33,7 @@ function completeTask(button, taskName) {
 	assignedCountDisplay.innerText = remainingTasks.toString().padStart(2, "0");
 	completeTasks++;
 	completedCountDisplay.innerText = completeTasks.toString().padStart(2, "0");
-	// Add Activity Log Entry
+
 	const logEntry = document.createElement("li");
 	logEntry.className = "bg-[#f4f7ff]  p-3 rounded-lg text-sm";
 	logEntry.innerHTML = `<li> You have completed the task <strong> ${taskName} </strong> at <strong> ${timeString} </strong> </li>`;
@@ -44,10 +44,10 @@ function completeTask(button, taskName) {
 
 	activityLog.appendChild(logEntry);
 
-	alert("Board Update Successfully !!");
+	alert("Board Update Successfully!!!");
 
 	if (remainingTasks === 0) {
-		alert("Congrats!! You have completed all the current task.");
+		alert("Congrats!! You have completed all the current task!!!");
 	}
 }
 
